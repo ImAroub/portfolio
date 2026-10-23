@@ -50,6 +50,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: rgba(252, 250, 253, 0.88);
+  backdrop-filter: blur(14px);
 }
 
 
