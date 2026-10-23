@@ -47,7 +47,7 @@ body {
 .brand {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
 
   color: var(--text);
   text-decoration: none;
