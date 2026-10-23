@@ -47,19 +47,20 @@ body {
 .brand {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 20px;
 
   color: var(--text);
   text-decoration: none;
 
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
 }
 
 .brand img {
-  width: 68px;
+  width: 60px;
   height: auto;
   display: block;
+  flex-shrink: 0;
 }
 
 nav {
@@ -298,14 +299,13 @@ nav a:hover {
   }
 
   .brand {
-    gap: 10px;
-    font-size: 12px;
+    gap: 14px;
+    font-size: 11px;
   }
 
   .brand img {
-    width: 58px;
+    width: 52px;
   }
-
 
   .hero {
     width: min(100% - 32px, 1180px);
