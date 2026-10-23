@@ -649,7 +649,7 @@ nav a:hover {
 .skill-card p {
   color: var(--muted);
 
-  font-size: 11px;
+  font-size: 12px;
 
   line-height: 1.7;
 }
@@ -671,7 +671,7 @@ nav a:hover {
 
   overflow: hidden;
 
-  padding: 60px 30px;
+  padding: 45px 30px;
 
   text-align: center;
 
