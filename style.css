@@ -45,11 +45,21 @@ body {
 }
 
 .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
   color: var(--text);
   text-decoration: none;
 
   font-size: 18px;
   font-weight: 600;
+}
+
+.brand img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
 }
 
 nav {
