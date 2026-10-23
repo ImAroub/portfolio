@@ -47,24 +47,19 @@ body {
 .brand {
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 14px;
 
   color: var(--text);
   text-decoration: none;
 
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
 }
 
 .brand img {
-  width: 52px;
-  height: 42px;
-
-  object-fit: contain;
+  width: 68px;
+  height: auto;
   display: block;
-
-  transform: scale(1.65);
-  transform-origin: center;
 }
 
 nav {
@@ -303,14 +298,14 @@ nav a:hover {
   }
 
   .brand {
-  font-size: 12px;
+    gap: 10px;
+    font-size: 12px;
   }
-  
+
   .brand img {
-    width: 46px;
-    height: 38px;
-    transform: scale(1.55);
+    width: 58px;
   }
+
 
   .hero {
     width: min(100% - 32px, 1180px);
