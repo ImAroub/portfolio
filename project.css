@@ -460,7 +460,7 @@
 .feature-card p {
   color: var(--muted);
 
-  font-size: 11.5px;
+  font-size: 12.5px;
   line-height: 1.65;
 }
 
@@ -769,10 +769,13 @@
   }
 
   .invoice-visual img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    max-width: 100%;
 
+    height: auto;
     max-height: 390px;
+
+    margin: 0 auto;
   }
 }
 
@@ -846,6 +849,8 @@
   }
 
   .invoice-visual img {
+    width: auto;
+    max-width: 100%;
     height: auto;
   }
 
@@ -865,5 +870,14 @@
 
   .hero-glow {
     opacity: 0.30;
+  }
+
+  .hero-glow-two {
+    left: auto;
+    right: -70px;
+  }
+
+  .hero-glow-three {
+    display: none;
   }
 }
