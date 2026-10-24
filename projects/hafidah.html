@@ -99,17 +99,25 @@
     <div class="project-back">
 
       <a href="../index.html#projects">
+
         <i class="fa-solid fa-arrow-left"></i>
+
         Back to Projects
+
       </a>
 
     </div>
 
 
-    <!-- Project Hero -->
+    <!-- Hero -->
     <section class="project-hero">
 
-      <div class="project-hero-copy">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+      <div class="hero-glow hero-glow-three"></div>
+
+
+      <div class="project-hero-content">
 
         <span class="project-context-badge">
           Cooperative Training Project
@@ -118,7 +126,6 @@
 
         <h1>
           Hafidah
-          <span>| حافظة</span>
         </h1>
 
 
@@ -135,49 +142,23 @@
         </p>
 
 
-        <div class="project-hero-actions">
-
-          <a
-            href="https://github.com/ImAroub/hafidah"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-main-button"
-          >
-            <i class="fa-brands fa-github"></i>
-            View on GitHub
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <div class="project-hero-glow"></div>
-
-    </section>
-
-
-    <!-- Main Preview -->
-    <section class="project-preview">
-
-      <div class="project-screenshot large">
-
-        <img
-          src="../assets/projects/hafidah/landing.png"
-          alt="Hafidah landing page"
+        <a
+          href="https://github.com/ImAroub/hafidah"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-main-button"
         >
+          <i class="fa-brands fa-github"></i>
+
+          View on GitHub
+        </a>
 
       </div>
-
-      <p class="image-caption">
-        Hafidah landing page introducing the invoice and
-        post-purchase management system.
-      </p>
 
     </section>
 
 
-    <!-- Overview + Role -->
+    <!-- Overview + My Role -->
     <section class="project-info-grid">
 
       <article class="project-info-card">
@@ -186,9 +167,11 @@
           01
         </span>
 
+
         <h2>
           Overview
         </h2>
+
 
         <p>
           Hafidah centralizes purchase information in one place so users
@@ -206,15 +189,17 @@
           02
         </span>
 
+
         <h2>
           My Role
         </h2>
+
 
         <p>
           I independently developed Hafidah from end to end, including
           the database structure, backend logic, user interface,
           authentication, invoice management, alerts, operations,
-          and administrative functionality.
+          and overall system flow.
         </p>
 
       </article>
@@ -222,28 +207,67 @@
     </section>
 
 
-    <!-- Dashboard -->
-    <section class="project-section">
+    <!-- Landing Page -->
+    <section class="split-section">
 
-      <div class="project-section-heading">
+      <div class="split-copy">
 
         <span class="section-label">
-          System Overview
+          System Introduction
         </span>
 
+
         <h2>
-          Dashboard
+          Landing Page
         </h2>
 
+
         <p>
-          The dashboard brings invoices, operations, upcoming alerts,
-          and recent activity together in one place.
+          The landing page introduces the system and highlights its
+          purpose: helping users keep their invoices and post-purchase
+          details organized in one place.
         </p>
 
       </div>
 
 
-      <div class="project-screenshot large">
+      <div class="split-image">
+
+        <img
+          src="../assets/projects/hafidah/landing.png"
+          alt="Hafidah landing page"
+        >
+
+      </div>
+
+    </section>
+
+
+    <!-- Dashboard -->
+    <section class="split-section split-reverse">
+
+      <div class="split-copy">
+
+        <span class="section-label">
+          System Overview
+        </span>
+
+
+        <h2>
+          Dashboard
+        </h2>
+
+
+        <p>
+          The dashboard brings invoices, operations, recent additions,
+          and upcoming alerts together in one place so users can quickly
+          understand their current status.
+        </p>
+
+      </div>
+
+
+      <div class="split-image">
 
         <img
           src="../assets/projects/hafidah/dashboard.png"
@@ -255,14 +279,10 @@
     </section>
 
 
-    <!-- Features -->
-    <section class="project-section">
+    <!-- Key Features -->
+    <section class="features-section">
 
-      <div class="project-section-heading">
-
-        <span class="section-label">
-          Core Functionality
-        </span>
+      <div class="section-heading-project">
 
         <h2>
           Key Features
@@ -272,6 +292,7 @@
 
 
       <div class="feature-grid">
+
 
         <article class="feature-card">
 
@@ -361,15 +382,15 @@
         <article class="feature-card">
 
           <div class="feature-icon">
-            <i class="fa-solid fa-user-shield"></i>
+            <i class="fa-regular fa-user"></i>
           </div>
 
           <h3>
-            User & Admin Management
+            User Account Management
           </h3>
 
           <p>
-            Support user accounts alongside administrative management tools.
+            Support user access, authentication, and organized personal records.
           </p>
 
         </article>
@@ -380,62 +401,86 @@
 
 
     <!-- Invoice Management -->
-    <section class="project-section">
+    <section class="invoice-section">
 
-      <div class="project-section-heading">
+      <div class="section-heading-project">
 
         <span class="section-label">
           Invoice Management
         </span>
 
+
         <h2>
-          Organizing Purchase Information
+          Managing Purchase Invoices
         </h2>
 
+
         <p>
-          Users can browse their invoices, apply filters, view status
-          information, and open an invoice to see its full post-purchase
-          details.
+          Users can browse stored purchases, apply filters, and open
+          detailed invoice pages to review product, store, period,
+          and status information.
         </p>
 
       </div>
 
 
-      <div class="project-image-grid">
+      <div class="invoice-grid">
 
-        <div>
 
-          <div class="project-screenshot">
+        <!-- Invoice List -->
+        <div class="invoice-column">
 
-            <img
-              src="../assets/projects/hafidah/invoices.png"
-              alt="Hafidah invoice management page"
-            >
+          <div class="image-text">
+
+            <h3>
+              Invoice List
+            </h3>
+
+            <p>
+              Search, filtering, categories, and status indicators make
+              stored purchases easier to organize and review.
+            </p>
 
           </div>
 
-          <p class="image-caption">
-            Invoice list with search, filters, categories, and status indicators.
-          </p>
+
+          <div class="project-image-frame">
+
+            <img
+              src="../assets/projects/hafidah/invoices.png"
+              alt="Hafidah invoice list"
+            >
+
+          </div>
 
         </div>
 
 
-        <div>
+        <!-- Invoice Details -->
+        <div class="invoice-column">
 
-          <div class="project-screenshot">
+          <div class="image-text">
 
-            <img
-              src="../assets/projects/hafidah/invoice-details.png"
-              alt="Hafidah invoice details page"
-            >
+            <h3>
+              Invoice Details
+            </h3>
+
+            <p>
+              Each invoice keeps purchase information together with
+              warranty, return, replacement, and renewal periods.
+            </p>
 
           </div>
 
-          <p class="image-caption">
-            Invoice details with warranty, return, replacement,
-            subscription, and related operations.
-          </p>
+
+          <div class="project-image-frame">
+
+            <img
+              src="../assets/projects/hafidah/invoice-details.png"
+              alt="Hafidah invoice details"
+            >
+
+          </div>
 
         </div>
 
@@ -445,41 +490,37 @@
 
 
     <!-- Post Purchase -->
-    <section class="project-section post-purchase-section">
+    <section class="split-section operations-section">
 
-      <div class="project-section-heading">
+      <div class="split-copy">
 
         <span class="section-label">
-          Beyond the Invoice
+          Post-Purchase Tracking
         </span>
 
+
         <h2>
-          Post-Purchase Tracking
+          Managing Post-Purchase Operations
         </h2>
 
+
         <p>
-          Hafidah does more than store invoices. Users can record
-          post-purchase events such as maintenance, replacement, return,
-          cancellation, and renewal while keeping each operation connected
-          to the original purchase.
+          Hafidah keeps post-purchase events linked to the original
+          invoice, allowing users to record maintenance, returns,
+          replacements, renewals, and other related actions.
         </p>
 
       </div>
 
 
-      <div class="project-screenshot medium">
+      <div class="split-image operations-image">
 
         <img
           src="../assets/projects/hafidah/operations-history.png"
-          alt="Hafidah post-purchase operations history"
+          alt="Hafidah operations history"
         >
 
       </div>
-
-      <p class="image-caption centered">
-        Operations remain connected to the invoice to create a clear
-        post-purchase history.
-      </p>
 
     </section>
 
@@ -492,6 +533,7 @@
         <span class="info-number">
           03
         </span>
+
 
         <h2>
           Technologies
@@ -517,14 +559,16 @@
           04
         </span>
 
+
         <h2>
           Project Context
         </h2>
 
+
         <p>
           Hafidah was developed as an independent project during my
-          cooperative training, providing practical experience in building
-          a complete database-driven web application.
+          cooperative training, providing practical experience in
+          building a complete database-driven web application.
         </p>
 
       </article>
@@ -532,7 +576,7 @@
     </section>
 
 
-    <!-- Final Link -->
+    <!-- Repository -->
     <section class="project-end">
 
       <div>
@@ -555,6 +599,7 @@
         class="project-main-button"
       >
         <i class="fa-brands fa-github"></i>
+
         View Repository
       </a>
 
