@@ -39,7 +39,7 @@
 
 
 /* ========================================
-   Project Hero
+   Shared Project Hero
 ======================================== */
 
 .project-hero {
@@ -62,7 +62,7 @@
 }
 
 
-/* Same glow identity as index hero */
+/* Same hero identity across project pages */
 
 .project-hero-content::before {
   content: "";
@@ -96,14 +96,13 @@
 
   filter: blur(24px);
 
-  opacity: 0.85;
+  opacity: 0.78;
 
   pointer-events: none;
 }
 
 
-/* Hide any old glow elements
-   that may still exist in older project HTML */
+/* Old glow elements from earlier project pages */
 
 .project-hero .hero-glow {
   display: none;
@@ -250,17 +249,6 @@
 
   background:
     rgba(139, 120, 168, 0.10);
-}
-
-.summary-number {
-  display: block;
-
-  margin-bottom: 12px;
-
-  color: var(--pink-strong);
-
-  font-size: 11px;
-  font-weight: 600;
 }
 
 .summary-item h2 {
@@ -1087,17 +1075,6 @@
   margin-bottom: 100px;
 }
 
-.status-label {
-  display: block;
-
-  margin-bottom: 9px;
-
-  color: var(--pink-strong);
-
-  font-size: 10px;
-  font-weight: 600;
-}
-
 .project-status-section h2 {
   margin-bottom: 9px;
 
@@ -1130,6 +1107,7 @@
       repeat(2, minmax(0, 1fr));
   }
 
+
   .split-section,
   .operations-section {
     grid-template-columns: 1fr;
@@ -1137,10 +1115,12 @@
     gap: 30px;
   }
 
+
   .split-reverse .split-copy,
   .split-reverse .split-image {
     order: initial;
   }
+
 
   .split-copy,
   .split-copy p,
@@ -1148,21 +1128,25 @@
     max-width: 720px;
   }
 
+
   .split-image,
   .operations-visual {
     justify-content: flex-start;
   }
+
 
   .split-image img {
     max-width: min(430px, 100%);
     max-height: none;
   }
 
+
   .invoice-visual-layout {
     grid-template-columns: 1fr;
 
     gap: 48px;
   }
+
 
   .invoice-visual img {
     width: auto;
