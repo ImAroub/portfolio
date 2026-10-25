@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Wajhati is a full-stack Arabic travel planning web application for generating and customizing trips within Saudi Arabia."
+  >
+
+  <title>Wajhati | Aroub Abdullah</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="../assets/logo.png"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../style.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../project.css"
+  >
+</head>
+
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+
+    <a
+      href="../index.html"
+      class="brand"
+    >
+      <img
+        src="../assets/logo.png"
+        alt="Aroub Abdullah logo"
+      >
+
+      <span>
+        Aroub Abdullah
+      </span>
+    </a>
+
+
+    <nav>
+
+      <a href="../index.html#projects">
+        Projects
+      </a>
+
+      <a href="../index.html#skills">
+        Skills
+      </a>
+
+      <a href="../index.html#contact">
+        Contact
+      </a>
+
+    </nav>
+
+  </header>
+
+
+  <main class="project-page wajhati-page">
+
+
+    <!-- Back -->
+    <div class="project-back">
+
+      <a href="../index.html#projects">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to Projects
+      </a>
+
+    </div>
+
+
+    <!-- Hero -->
+    <section class="project-hero">
+
+      <div class="project-hero-content">
+
+        <span class="project-context-badge">
+          Tuwaiq Academy Project
+        </span>
+
+
+        <h1>
+          Wajhati
+        </h1>
+
+
+        <p class="project-subtitle">
+          Full-Stack Travel Planning Web Application
+        </p>
+
+
+        <p class="project-intro">
+          Wajhati helps users plan trips within Saudi Arabia by generating
+          customizable day-by-day itineraries that combine attractions,
+          restaurants, and cafés.
+        </p>
+
+
+        <a
+          href="https://github.com/ImAroub/wajhati"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-main-button"
+        >
+          <i class="fa-brands fa-github"></i>
+          View on GitHub
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- Overview + My Role -->
+    <section class="project-summary">
+
+      <article class="summary-item">
+
+        <h2>
+          Overview
+        </h2>
+
+        <p>
+          Wajhati is an Arabic travel-planning application designed to
+          simplify domestic trip planning and reduce the need to search for
+          places and organize daily schedules manually.
+        </p>
+
+        <p class="summary-secondary">
+          Users select a destination city and trip duration, and the system
+          generates an initial itinerary using available attractions,
+          restaurants, and cafés. The current version supports Riyadh
+          and Jeddah.
+        </p>
+
+      </article>
+
+
+      <article class="summary-item">
+
+        <h2>
+          My Role
+        </h2>
+
+        <p>
+          I developed Wajhati as an individual project during an ASP.NET
+          Core MVC training program at Tuwaiq Academy.
+        </p>
+
+        <p class="summary-secondary">
+          I built the application end to end, including the MVC architecture,
+          application logic, database design and integration, authentication
+          and user accounts, trip generation and customization, saved trips,
+          place management, image uploads, and the user interface.
+        </p>
+
+      </article>
+
+    </section>
+
+
+    <!-- Explore the Application -->
+    <section class="wajhati-discovery-section">
+
+      <div class="section-heading-project">
+
+        <h2>
+          Explore the Application
+        </h2>
+
+        <p>
+          Wajhati provides a visual way to discover destinations before
+          building a trip, with searchable and filterable place data.
+        </p>
+
+      </div>
+
+
+      <div class="wajhati-discovery-grid">
+
+
+        <figure class="wajhati-screen">
+
+          <img
+            src="../assets/projects/wajhati/home.png"
+            alt="Wajhati home page showing suggested destinations"
+          >
+
+          <figcaption>
+
+            <h3>
+              Home & Suggestions
+            </h3>
+
+            <p>
+              The home page introduces the trip-planning flow and highlights
+              suggested destinations available in the system.
+            </p>
+
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="wajhati-screen">
+
+          <img
+            src="../assets/projects/wajhati/places.png"
+            alt="Wajhati places page with search and filtering"
+          >
+
+          <figcaption>
+
+            <h3>
+              Browse Places
+            </h3>
+
+            <p>
+              Users can browse destinations and search or filter them by
+              name, city, and category.
+            </p>
+
+          </figcaption>
+
+        </figure>
+
+      </div>
+
+    </section>
+
+
+    <!-- How Wajhati Works -->
+    <section class="wajhati-flow-section">
+
+      <div class="section-heading-project">
+
+        <h2>
+          How Wajhati Works
+        </h2>
+
+        <p>
+          The trip-planning flow moves from a simple destination selection
+          to a generated itinerary that remains fully customizable.
+        </p>
+
+      </div>
+
+
+      <!-- Step 1 -->
+      <article class="wajhati-flow-step">
+
+        <div class="wajhati-flow-copy">
+
+          <span class="wajhati-flow-number">
+            01
+          </span>
+
+          <h3>
+            Choose a Destination
+          </h3>
+
+          <p>
+            After signing in, the user selects a destination city and a trip
+            duration from one to seven days.
+          </p>
+
+        </div>
+
+
+        <div class="wajhati-flow-visual">
+
+          <img
+            src="../assets/projects/wajhati/trip-setup.png"
+            alt="Wajhati trip setup page"
+          >
+
+        </div>
+
+      </article>
+
+
+      <!-- Step 2 -->
+      <article class="wajhati-flow-step wajhati-flow-reverse">
+
+        <div class="wajhati-flow-copy">
+
+          <span class="wajhati-flow-number">
+            02
+          </span>
+
+          <h3>
+            Generate an Itinerary
+          </h3>
+
+          <p>
+            Wajhati creates a day-by-day itinerary using places available
+            in the selected city. Each day typically includes a main
+            destination, a restaurant, and a café while avoiding repeated
+            places when alternatives are available.
+          </p>
+
+        </div>
+
+
+        <div class="wajhati-flow-visual">
+
+          <img
+            src="../assets/projects/wajhati/generated-plan.png"
+            alt="Generated multi-day itinerary in Wajhati"
+          >
+
+        </div>
+
+      </article>
+
+
+      <!-- Step 3 -->
+      <article class="wajhati-flow-step">
+
+        <div class="wajhati-flow-copy">
+
+          <span class="wajhati-flow-number">
+            03
+          </span>
+
+          <h3>
+            Customize & Save
+          </h3>
+
+          <p>
+            The generated plan remains editable. Users can add or remove
+            places, edit individual days, add new days, and save the completed
+            trip to their account for later access.
+          </p>
+
+        </div>
+
+
+        <div class="wajhati-flow-visual">
+
+          <img
+            src="../assets/projects/wajhati/edit-day.png"
+            alt="Editing the contents of a trip day in Wajhati"
+          >
+
+        </div>
+
+      </article>
+
+    </section>
+
+
+    <!-- Key Features -->
+    <section class="features-section">
+
+      <div class="section-heading-project">
+
+        <h2>
+          Key Features
+        </h2>
+
+      </div>
+
+
+      <div class="feature-grid">
+
+
+        <article class="feature-card">
+
+          <div class="feature-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+
+          <h3>
+            Explore & Search
+          </h3>
+
+          <p>
+            Browse detailed place information and search or filter
+            destinations by name, city, and category.
+          </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+          <div class="feature-icon">
+            <i class="fa-solid fa-route"></i>
+          </div>
+
+          <h3>
+            Itinerary Generation
+          </h3>
+
+          <p>
+            Generate multi-day trip plans using available attractions,
+            restaurants, and cafés for the selected city.
+          </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+          <div class="feature-icon">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </div>
+
+          <h3>
+            Customizable Trips
+          </h3>
+
+          <p>
+            Modify generated itineraries by managing individual days
+            and adding or removing destinations.
+          </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+          <div class="feature-icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+
+          <h3>
+            Content Management
+          </h3>
+
+          <p>
+            Manage place records, descriptions, opening hours, booking
+            requirements, links, and uploaded images through the application.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Technologies -->
+    <section class="technologies-section">
+
+      <div class="section-heading-project">
+
+        <h2>
+          Technologies
+        </h2>
+
+      </div>
+
+
+      <div class="technology-grid">
+
+
+        <div class="technology-item">
+
+          <div class="technology-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+
+          <span>C#</span>
+
+        </div>
+
+
+        <div class="technology-item">
+
+          <div class="technology-icon">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+
+          <span>ASP.NET Core MVC</span>
+
+        </div>
+
+
+        <div class="technology-item">
+
+          <div class="technology-icon">
+            <i class="fa-brands fa-microsoft"></i>
+          </div>
+
+          <span>.NET 9</span>
+
+        </div>
+
+
+        <div class="technology-item">
+
+          <div class="technology-icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+
+          <span>Entity Framework Core</span>
+
+        </div>
+
+
+        <div class="technology-item">
+
+          <div class="technology-icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+
+          <span>SQL Server</span>
+
+        </div>
+
+
+        <div class="technology-item">
+
+          <div class="technology-icon">
+            <i class="fa-solid fa-user-shield"></i>
+          </div>
+
+          <span>ASP.NET Core Identity</span>
+
+        </div>
+
+
+        <div class="technology-item">
+
+          <div class="technology-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+
+          <span>Razor Views</span>
+
+        </div>
+
+
+        <div class="technology-item">
+
+          <div class="technology-icon">
+            <i class="fa-brands fa-bootstrap"></i>
+          </div>
+
+          <span>Bootstrap</span>
+
+        </div>
+
+
+        <div class="technology-item">
+
+          <div class="technology-icon">
+            <i class="fa-brands fa-aws"></i>
+          </div>
+
+          <span>AWS</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Cloud Deployment -->
+    <section class="wajhati-cloud-section">
+
+      <div class="wajhati-cloud-copy">
+
+        <h2>
+          Cloud Deployment
+        </h2>
+
+        <p>
+          A version of Wajhati was deployed to Amazon Web Services (AWS)
+          during the training program, providing practical experience in
+          moving an ASP.NET Core application from a local development
+          environment to the cloud.
+        </p>
+
+      </div>
+
+
+      <div
+        class="wajhati-cloud-mark"
+        aria-hidden="true"
+      >
+        <i class="fa-brands fa-aws"></i>
+      </div>
+
+    </section>
+
+
+    <!-- Repository -->
+    <section class="project-end">
+
+      <div>
+
+        <h2>
+          Explore the project on GitHub.
+        </h2>
+
+        <p>
+          The repository contains the source code, project structure,
+          and technical documentation.
+        </p>
+
+      </div>
+
+
+      <a
+        href="https://github.com/ImAroub/wajhati"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-main-button"
+      >
+        <i class="fa-brands fa-github"></i>
+        View Repository
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+
+    <div class="footer-brand">
+
+      <img
+        src="../assets/logo.png"
+        alt=""
+      >
+
+      <span>
+        Aroub Abdullah
+      </span>
+
+    </div>
+
+
+    <p>
+      Computer Science · Qassim University
+    </p>
+
+  </footer>
+
+</body>
+
+</html>
