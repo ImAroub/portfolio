@@ -882,6 +882,7 @@
   }
 }
 
+
 /* ========================================
    Sejal
 ======================================== */
@@ -903,7 +904,7 @@
 
 
 /* ========================================
-   Summary
+   Sejal Summary
 ======================================== */
 
 .sejal-page .summary-secondary {
@@ -1145,19 +1146,22 @@
 ======================================== */
 
 .prototype-section {
-  margin-bottom: 115px;
+  margin-bottom: 120px;
 }
 
 .prototype-disclaimer {
   max-width: 760px;
 
-  margin: -10px 0 38px;
+  margin: -8px 0 52px;
 
   color: var(--muted);
 
   font-size: 12.5px;
   line-height: 1.8;
 }
+
+
+/* Prototype Cards */
 
 .prototype-grid {
   display: grid;
@@ -1167,42 +1171,83 @@
 
   gap: 24px;
 
-  align-items: start;
+  align-items: stretch;
 }
 
 .prototype-item {
   min-width: 0;
+  height: 100%;
 
   margin: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 14px 14px 18px;
+
+  border: none;
+  border-radius: 18px;
+
+  background:
+    rgba(255, 255, 255, 0.88);
+
+  box-shadow:
+    0 13px 34px
+    rgba(63, 47, 76, 0.09);
 }
 
-.prototype-item img {
+
+/* Prototype Image */
+
+.prototype-image {
+  width: 100%;
+  height: 225px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border-radius: 11px;
+
+  background:
+    rgba(252, 250, 253, 0.96);
+}
+
+.prototype-image img {
   display: block;
 
   width: 100%;
-  height: 230px;
+  height: 100%;
 
   object-fit: contain;
   object-position: center top;
 
-  border: none;
-  outline: none;
+  border:
+    1px solid
+    rgba(139, 120, 168, 0.13);
 
-  border-radius: 6px;
+  border-radius: 11px;
 
   box-shadow:
-    0 9px 24px
-    rgba(61, 46, 72, 0.055);
+    0 6px 17px
+    rgba(61, 46, 72, 0.06);
 }
 
+
+/* Prototype Caption */
+
 .prototype-caption {
-  margin-top: 16px;
+  flex: 1;
+
+  padding: 16px 5px 2px;
 }
 
 .prototype-number {
   display: block;
 
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 
   color: var(--pink-strong);
 
@@ -1211,7 +1256,7 @@
 }
 
 .prototype-caption h3 {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 
   color: var(--text);
 
@@ -1223,7 +1268,7 @@
   color: var(--muted);
 
   font-size: 11.5px;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 
@@ -1317,26 +1362,31 @@
 }
 
 
-/* Prototype:
-   3 in one row on desktop,
-   then 1 per row on smaller screens.
-   Never 2 + 1. */
+/* ========================================
+   Prototype Responsive
+======================================== */
 
 @media (max-width: 760px) {
 
   .prototype-grid {
     grid-template-columns: 1fr;
 
-    gap: 42px;
+    gap: 28px;
   }
 
   .prototype-item {
     width: min(560px, 100%);
 
     margin: 0 auto;
+
+    padding: 13px 13px 17px;
   }
 
-  .prototype-item img {
+  .prototype-image {
+    height: auto;
+  }
+
+  .prototype-image img {
     width: 100%;
     height: auto;
 
@@ -1387,10 +1437,15 @@
   }
 
   .prototype-disclaimer {
-    margin-bottom: 34px;
+    margin-bottom: 38px;
   }
 
-  .prototype-item img {
-    border-radius: 4px;
+  .prototype-item {
+    border-radius: 16px;
+  }
+
+  .prototype-image,
+  .prototype-image img {
+    border-radius: 9px;
   }
 }
