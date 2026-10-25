@@ -1412,3 +1412,406 @@
     border-radius: 9px;
   }
 }
+
+
+/* ========================================
+   Wajhati
+======================================== */
+
+
+/* ========================================
+   Wajhati - Explore the Application
+======================================== */
+
+.wajhati-discovery-section {
+  margin-bottom: 130px;
+}
+
+.wajhati-discovery-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 34px;
+
+  align-items: start;
+}
+
+.wajhati-screen {
+  min-width: 0;
+  margin: 0;
+}
+
+.wajhati-screen img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border: none;
+  outline: none;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 10px 28px
+    rgba(61, 46, 72, 0.065);
+}
+
+.wajhati-screen figcaption {
+  padding: 17px 4px 0;
+}
+
+.wajhati-screen figcaption h3 {
+  margin-bottom: 6px;
+
+  color: var(--text);
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.wajhati-screen figcaption p {
+  max-width: 470px;
+
+  color: var(--muted);
+
+  font-size: 12.5px;
+  line-height: 1.75;
+}
+
+
+/* ========================================
+   Wajhati - Trip Planning Flow
+======================================== */
+
+.wajhati-flow-section {
+  margin-bottom: 130px;
+}
+
+.wajhati-flow-step {
+  display: grid;
+
+  grid-template-columns:
+    0.72fr 1.28fr;
+
+  align-items: center;
+
+  gap: 70px;
+
+  padding: 55px 0;
+
+  border-bottom:
+    1px solid
+    rgba(139, 120, 168, 0.09);
+}
+
+.wajhati-flow-step:first-of-type {
+  padding-top: 20px;
+}
+
+.wajhati-flow-step:last-child {
+  padding-bottom: 0;
+
+  border-bottom: none;
+}
+
+.wajhati-flow-reverse
+.wajhati-flow-copy {
+  order: 2;
+}
+
+.wajhati-flow-reverse
+.wajhati-flow-visual {
+  order: 1;
+}
+
+.wajhati-flow-copy {
+  max-width: 390px;
+}
+
+.wajhati-flow-number {
+  width: 33px;
+  height: 33px;
+
+  display: inline-grid;
+  place-items: center;
+
+  margin-bottom: 15px;
+
+  border-radius: 50%;
+
+  color: var(--purple);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(243, 215, 228, 0.88),
+      rgba(238, 232, 247, 0.96)
+    );
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.wajhati-flow-copy h3 {
+  margin-bottom: 10px;
+
+  color: var(--text);
+
+  font-size: 22px;
+  font-weight: 600;
+
+  letter-spacing: -0.45px;
+}
+
+.wajhati-flow-copy p {
+  color: var(--muted);
+
+  font-size: 13.5px;
+  line-height: 1.85;
+}
+
+.wajhati-flow-visual {
+  min-width: 0;
+}
+
+.wajhati-flow-visual img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border: none;
+  outline: none;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 10px 28px
+    rgba(61, 46, 72, 0.065);
+}
+
+
+/* ========================================
+   Wajhati - Key Features
+======================================== */
+
+.wajhati-page .feature-grid {
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 16px;
+}
+
+.wajhati-page .feature-card {
+  min-height: 145px;
+}
+
+
+/* ========================================
+   Wajhati - Cloud Deployment
+======================================== */
+
+.wajhati-cloud-section {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 55px;
+
+  margin-bottom: 110px;
+
+  padding: 35px 38px;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.70),
+      rgba(238, 232, 247, 0.58)
+    );
+
+  box-shadow:
+    0 8px 24px
+    rgba(61, 46, 72, 0.045);
+}
+
+.wajhati-cloud-copy {
+  max-width: 680px;
+}
+
+.wajhati-cloud-copy h2 {
+  margin-bottom: 9px;
+
+  color: var(--text);
+
+  font-size: 25px;
+  font-weight: 600;
+
+  letter-spacing: -0.55px;
+}
+
+.wajhati-cloud-copy p {
+  color: var(--muted);
+
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.wajhati-cloud-mark {
+  width: 72px;
+  height: 72px;
+
+  flex-shrink: 0;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 18px;
+
+  color: var(--purple);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(243, 215, 228, 0.88),
+      rgba(238, 232, 247, 0.98)
+    );
+}
+
+.wajhati-cloud-mark i {
+  font-size: 30px;
+}
+
+
+/* ========================================
+   Wajhati - Tablet
+======================================== */
+
+@media (max-width: 900px) {
+
+  .wajhati-discovery-grid {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+
+  .wajhati-screen {
+    max-width: 720px;
+  }
+
+
+  .wajhati-flow-step {
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+
+    padding: 48px 0;
+  }
+
+
+  .wajhati-flow-reverse
+  .wajhati-flow-copy,
+
+  .wajhati-flow-reverse
+  .wajhati-flow-visual {
+    order: initial;
+  }
+
+
+  .wajhati-flow-copy {
+    max-width: 680px;
+  }
+
+
+  .wajhati-flow-visual {
+    max-width: 760px;
+  }
+
+}
+
+
+/* ========================================
+   Wajhati - Mobile
+======================================== */
+
+@media (max-width: 800px) {
+
+  .wajhati-discovery-section,
+  .wajhati-flow-section,
+  .wajhati-cloud-section {
+    margin-bottom: 85px;
+  }
+
+
+  .wajhati-cloud-section {
+    align-items: flex-start;
+
+    padding: 28px;
+
+    gap: 30px;
+  }
+
+}
+
+
+/* ========================================
+   Wajhati - Small Mobile
+======================================== */
+
+@media (max-width: 600px) {
+
+  .wajhati-page .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .wajhati-discovery-grid {
+    gap: 38px;
+  }
+
+
+  .wajhati-flow-step {
+    gap: 22px;
+
+    padding: 38px 0;
+  }
+
+
+  .wajhati-flow-copy h3 {
+    font-size: 19px;
+  }
+
+
+  .wajhati-flow-copy p {
+    font-size: 13px;
+  }
+
+
+  .wajhati-cloud-section {
+    flex-direction: column;
+
+    padding: 25px;
+  }
+
+
+  .wajhati-cloud-mark {
+    width: 58px;
+    height: 58px;
+
+    border-radius: 15px;
+  }
+
+
+  .wajhati-cloud-mark i {
+    font-size: 25px;
+  }
+
+}
+
+
