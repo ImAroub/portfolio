@@ -124,15 +124,14 @@
 
 
         <p class="project-subtitle">
-          Evidence-Grounded Multi-Agent Scientific Debate System
+          Multi-Agent AI for Evidence-Grounded Scientific Debate
         </p>
 
 
         <p class="project-intro">
-          Sejal transforms a scientific question or claim into a structured
-          debate between an Advocate and a Skeptic, then evaluates the debate
-          and produces a final judgment grounded in the scientific evidence
-          used.
+          Sejal uses retrieved scientific evidence to structure a debate
+          between an Advocate and a Skeptic, then evaluates both sides to
+          produce an evidence-based final judgment.
         </p>
 
 
@@ -154,20 +153,16 @@
 
       <article class="summary-item">
 
-        <span class="summary-number">
-          01
-        </span>
-
         <h2>
           Overview
         </h2>
 
         <p>
           Sejal combines Retrieval-Augmented Generation (RAG) with a
-          multi-agent workflow to build scientific debates around retrieved
-          research evidence. The Advocate and Skeptic reason from the same
-          evidence base across multiple rounds before the validated debate
-          moves to the final evaluation stage.
+          multi-agent workflow to build structured scientific debates
+          grounded in retrieved research evidence. The Advocate and Skeptic
+          reason from the same evidence base across multiple rounds before
+          the validated debate moves to final evaluation.
         </p>
 
         <p class="summary-secondary">
@@ -180,25 +175,21 @@
 
       <article class="summary-item">
 
-        <span class="summary-number">
-          02
-        </span>
-
         <h2>
           My Contribution
         </h2>
 
         <p>
           My contribution focused on Sejal's AI layer, developed
-          collaboratively with one teammate through iterative implementation,
+          collaboratively with a teammate through iterative implementation,
           testing, and refinement.
         </p>
 
         <p class="summary-secondary">
           Our work covered the evidence-retrieval pipeline, evidence-grounded
           Advocate and Skeptic behavior, response validation, adaptive
-          stopping, and preparation of the validated debate context used by
-          the final evaluation stage.
+          stopping, and preparing the validated debate and evidence context
+          for final evaluation.
         </p>
 
       </article>
@@ -330,10 +321,10 @@
             </p>
 
             <p>
-              Each point pairs a direct quotation from a scientific paper with
-              an interpretation of what that quotation supports. After
-              presenting the evidence points, the agent summarizes its overall
-              position for the round.
+              Each point pairs a direct quotation from a scientific paper
+              with an interpretation of what that quotation supports. After
+              presenting the evidence points, the agent summarizes its
+              overall position for the round.
             </p>
 
 
@@ -382,8 +373,8 @@
             <p class="workflow-note">
               Before a response is accepted and displayed, its structure,
               evidence references, and quotations are validated. If validation
-              fails, the response is corrected and checked again before it can
-              enter the debate.
+              fails, the response is corrected and checked again before it
+              can enter the debate.
             </p>
 
           </div>
@@ -408,14 +399,15 @@
             <p>
               After the first round, later responses are checked for
               meaningful novelty before they are added to the debate.
-              Each agent considers the previous discussion and is expected to
-              contribute a new argument rather than restate an earlier point.
+              Each agent considers the previous discussion and is expected
+              to contribute a new argument rather than restate an earlier
+              point.
             </p>
 
             <p>
-              If a later response does not add a meaningful new argument, it
-              is not accepted as a new debate contribution. The debate stops
-              and proceeds directly to final evaluation.
+              If a later response does not add a meaningful new argument,
+              it is not accepted as a new debate contribution. The debate
+              stops and proceeds directly to final evaluation.
             </p>
 
           </div>
@@ -439,15 +431,15 @@
 
             <p>
               The final evaluation receives the retrieved evidence and the
-              complete validated debate. It evaluates the Advocate and Skeptic
-              independently and determines whether one position is better
-              supported or neither is clearly favored.
+              complete validated debate. It evaluates the Advocate and
+              Skeptic independently and determines whether one position is
+              better supported or neither is clearly favored.
             </p>
 
             <p>
-              The scientific claim itself is also assessed separately before
-              a concise final answer is generated, explaining what the
-              evidence supports and any important limitation.
+              The scientific claim is also assessed separately before a
+              concise final answer is generated, explaining what the evidence
+              supports and any important limitation.
             </p>
 
 
@@ -617,9 +609,7 @@
             <i class="fa-brands fa-python"></i>
           </div>
 
-          <span>
-            Python
-          </span>
+          <span>Python</span>
 
         </div>
 
@@ -630,9 +620,7 @@
             <i class="fa-solid fa-diagram-project"></i>
           </div>
 
-          <span>
-            LangGraph
-          </span>
+          <span>LangGraph</span>
 
         </div>
 
@@ -643,9 +631,7 @@
             <i class="fa-solid fa-database"></i>
           </div>
 
-          <span>
-            Chroma
-          </span>
+          <span>Chroma</span>
 
         </div>
 
@@ -656,9 +642,7 @@
             <i class="fa-solid fa-language"></i>
           </div>
 
-          <span>
-            multilingual-e5-small
-          </span>
+          <span>multilingual-e5-small</span>
 
         </div>
 
@@ -669,9 +653,7 @@
             <i class="fa-solid fa-magnifying-glass-chart"></i>
           </div>
 
-          <span>
-            RAG
-          </span>
+          <span>RAG</span>
 
         </div>
 
@@ -682,10 +664,6 @@
 
     <!-- Project Status -->
     <section class="project-status-section">
-
-      <span class="status-label">
-        Project Status
-      </span>
 
       <h2>
         Currently in development.
