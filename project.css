@@ -2,6 +2,11 @@
    Shared Project Styles
 ======================================== */
 
+
+/* ========================================
+   Project Page
+======================================== */
+
 .project-page {
   width: min(1120px, calc(100% - 48px));
   margin: 0 auto;
@@ -65,6 +70,7 @@
   content: "";
 
   position: absolute;
+
   inset: -45px -70px;
 
   z-index: -1;
@@ -91,18 +97,11 @@
     );
 
   filter: blur(24px);
+
   opacity: 0.78;
 
   pointer-events: none;
 }
-
-
-/* Old hero glow elements in Hafidah */
-
-.project-hero .hero-glow {
-  display: none;
-}
-
 
 .project-context-badge {
   display: inline-block;
@@ -125,7 +124,6 @@
   font-weight: 600;
 }
 
-
 .project-hero h1 {
   margin-bottom: 10px;
 
@@ -140,7 +138,6 @@
   letter-spacing: -1.8px;
 }
 
-
 .project-subtitle {
   margin-bottom: 18px;
 
@@ -149,7 +146,6 @@
   font-size: 17px;
   font-weight: 500;
 }
-
 
 .project-intro {
   max-width: 730px;
@@ -211,7 +207,7 @@
 
 
 /* ========================================
-   Shared Overview + My Role
+   Shared Overview + My Role / Contribution
 ======================================== */
 
 .project-summary {
@@ -295,6 +291,17 @@
 
   font-size: 14px;
   line-height: 1.85;
+}
+
+
+/* Wider heading option */
+
+.section-heading-wide {
+  max-width: 100%;
+}
+
+.section-heading-wide > p {
+  max-width: 1000px;
 }
 
 
@@ -1124,29 +1131,6 @@
 /* ========================================
    Wajhati Only
 ======================================== */
-
-
-/* Wider headings */
-
-.wajhati-page
-.wajhati-discovery-section
-.section-heading-project,
-
-.wajhati-page
-.wajhati-flow-section
-.section-heading-project {
-  max-width: 100%;
-}
-
-.wajhati-page
-.wajhati-discovery-section
-.section-heading-project > p,
-
-.wajhati-page
-.wajhati-flow-section
-.section-heading-project > p {
-  max-width: 1000px;
-}
 
 
 /* Explore the Application */
