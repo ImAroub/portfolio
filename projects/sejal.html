@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Sejal is an evidence-grounded multi-agent scientific debate system built as a graduation project."
+  >
+
+  <title>Sejal | Aroub Abdullah</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="../assets/logo.png"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../style.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../project.css"
+  >
+</head>
+
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+
+    <a
+      href="../index.html"
+      class="brand"
+    >
+      <img
+        src="../assets/logo.png"
+        alt="Aroub Abdullah logo"
+      >
+
+      <span>
+        Aroub Abdullah
+      </span>
+    </a>
+
+
+    <nav>
+
+      <a href="../index.html#projects">
+        Projects
+      </a>
+
+      <a href="../index.html#skills">
+        Skills
+      </a>
+
+      <a href="../index.html#contact">
+        Contact
+      </a>
+
+    </nav>
+
+  </header>
+
+
+  <main class="project-page sejal-page">
+
+
+    <!-- Back -->
+    <div class="project-back">
+
+      <a href="../index.html#projects">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to Projects
+      </a>
+
+    </div>
+
+
+    <!-- Hero -->
+    <section class="project-hero">
+
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+      <div class="hero-glow hero-glow-three"></div>
+
+
+      <div class="project-hero-content">
+
+        <span class="project-context-badge">
+          Graduation Project · Work in Progress
+        </span>
+
+
+        <h1>
+          Sejal
+        </h1>
+
+
+        <p class="project-subtitle">
+          Evidence-Grounded Multi-Agent Scientific Debate System
+        </p>
+
+
+        <p class="project-intro">
+          Sejal transforms a scientific question or claim into a structured
+          debate between an Advocate and a Skeptic, then evaluates the debate
+          and produces a final judgment grounded in the scientific evidence
+          used.
+        </p>
+
+
+        <a
+          href="#ai-workflow"
+          class="project-main-button"
+        >
+          <i class="fa-solid fa-diagram-project"></i>
+          Explore AI Workflow
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- Overview + My Contribution -->
+    <section class="project-summary">
+
+      <article class="summary-item">
+
+        <span class="summary-number">
+          01
+        </span>
+
+        <h2>
+          Overview
+        </h2>
+
+        <p>
+          Sejal combines Retrieval-Augmented Generation (RAG) with a
+          multi-agent workflow to build scientific debates around retrieved
+          research evidence. The Advocate and Skeptic reason from the same
+          evidence base across multiple rounds before the validated debate
+          moves to the final evaluation stage.
+        </p>
+
+        <p class="summary-secondary">
+          The broader platform also includes user accounts, authentication,
+          and saved debate history.
+        </p>
+
+      </article>
+
+
+      <article class="summary-item">
+
+        <span class="summary-number">
+          02
+        </span>
+
+        <h2>
+          My Contribution
+        </h2>
+
+        <p>
+          My contribution focused on Sejal's AI layer, developed
+          collaboratively with one teammate through iterative implementation,
+          testing, and refinement.
+        </p>
+
+        <p class="summary-secondary">
+          Our work covered the evidence-retrieval pipeline, evidence-grounded
+          Advocate and Skeptic behavior, response validation, adaptive
+          stopping, and preparation of the validated debate context used by
+          the final evaluation stage.
+        </p>
+
+      </article>
+
+    </section>
+
+
+    <!-- AI Workflow -->
+    <section
+      class="ai-workflow-section"
+      id="ai-workflow"
+    >
+
+      <div class="section-heading-project">
+
+        <h2>
+          AI Workflow
+        </h2>
+
+        <p>
+          The AI layer moves from scientific evidence retrieval to a
+          validated multi-agent debate and final evaluation.
+        </p>
+
+      </div>
+
+
+      <div class="workflow-list">
+
+
+        <!-- Step 1 -->
+        <article class="workflow-step">
+
+          <div class="workflow-marker">
+            <span>01</span>
+          </div>
+
+
+          <div class="workflow-content">
+
+            <h3>
+              Evidence Retrieval & Preparation
+            </h3>
+
+            <p>
+              The user's question or claim is prepared for semantic retrieval.
+              Relevant research is retrieved from academic sources including
+              OpenAlex and PubMed/PMC, then processed through cleaning,
+              deduplication, text extraction, and chunking.
+            </p>
+
+            <p>
+              Multilingual embeddings are generated and used with Chroma for
+              semantic retrieval and evidence selection, producing a relevant
+              and diverse evidence base for the debate.
+            </p>
+
+
+            <div
+              class="pipeline-flow"
+              aria-label="Evidence retrieval pipeline"
+            >
+
+              <span class="pipeline-chip">
+                User Claim
+              </span>
+
+              <i class="fa-solid fa-arrow-right pipeline-arrow"></i>
+
+              <span class="pipeline-chip">
+                Academic Retrieval
+              </span>
+
+              <i class="fa-solid fa-arrow-right pipeline-arrow"></i>
+
+              <span class="pipeline-chip">
+                Cleaning
+              </span>
+
+              <i class="fa-solid fa-arrow-right pipeline-arrow"></i>
+
+              <span class="pipeline-chip">
+                Chunking
+              </span>
+
+              <i class="fa-solid fa-arrow-right pipeline-arrow"></i>
+
+              <span class="pipeline-chip">
+                Embeddings
+              </span>
+
+              <i class="fa-solid fa-arrow-right pipeline-arrow"></i>
+
+              <span class="pipeline-chip">
+                Semantic Retrieval
+              </span>
+
+              <i class="fa-solid fa-arrow-right pipeline-arrow"></i>
+
+              <span class="pipeline-chip">
+                Evidence Selection
+              </span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- Step 2 -->
+        <article class="workflow-step">
+
+          <div class="workflow-marker">
+            <span>02</span>
+          </div>
+
+
+          <div class="workflow-content">
+
+            <h3>
+              Evidence-Grounded Debate
+            </h3>
+
+            <p>
+              The Advocate and Skeptic receive the same evidence base.
+              Depending on the available evidence, each round response can
+              contain one to three evidence-backed points.
+            </p>
+
+            <p>
+              Each point pairs a direct quotation from a scientific paper with
+              an interpretation of what that quotation supports. After
+              presenting the evidence points, the agent summarizes its overall
+              position for the round.
+            </p>
+
+
+            <div class="response-structure">
+
+              <div class="response-row">
+
+                <span class="response-label">
+                  Evidence point
+                </span>
+
+                <span class="structure-pill">
+                  Direct Quote
+                </span>
+
+                <i class="fa-solid fa-arrow-right structure-arrow"></i>
+
+                <span class="structure-pill">
+                  Interpretation
+                </span>
+
+              </div>
+
+
+              <div class="response-row">
+
+                <span class="response-label">
+                  Round response
+                </span>
+
+                <span class="structure-pill">
+                  1–3 Evidence Points
+                </span>
+
+                <i class="fa-solid fa-arrow-right structure-arrow"></i>
+
+                <span class="structure-pill">
+                  Agent Position
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <p class="workflow-note">
+              Before a response is accepted and displayed, its structure,
+              evidence references, and quotations are validated. If validation
+              fails, the response is corrected and checked again before it can
+              enter the debate.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- Step 3 -->
+        <article class="workflow-step">
+
+          <div class="workflow-marker">
+            <span>03</span>
+          </div>
+
+
+          <div class="workflow-content">
+
+            <h3>
+              Adaptive Stopping
+            </h3>
+
+            <p>
+              After the first round, later responses are checked for
+              meaningful novelty before they are added to the debate.
+              Each agent considers the previous discussion and is expected to
+              contribute a new argument rather than restate an earlier point.
+            </p>
+
+            <p>
+              If a later response does not add a meaningful new argument, it
+              is not accepted as a new debate contribution. The debate stops
+              and proceeds directly to final evaluation.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- Step 4 -->
+        <article class="workflow-step">
+
+          <div class="workflow-marker">
+            <span>04</span>
+          </div>
+
+
+          <div class="workflow-content">
+
+            <h3>
+              Evaluation & Final Judgment
+            </h3>
+
+            <p>
+              The final evaluation receives the retrieved evidence and the
+              complete validated debate. It evaluates the Advocate and Skeptic
+              independently and determines whether one position is better
+              supported or neither is clearly favored.
+            </p>
+
+            <p>
+              The scientific claim itself is also assessed separately before
+              a concise final answer is generated, explaining what the
+              evidence supports and any important limitation.
+            </p>
+
+            <p class="workflow-note">
+              The final answer passes an additional validation step to ensure
+              that it remains consistent with the completed evaluation and
+              does not introduce unsupported scientific conclusions.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Interface Prototype -->
+    <section class="prototype-section">
+
+      <div class="section-heading-project">
+
+        <h2>
+          Interface Prototype
+        </h2>
+
+        <p>
+          These screens show an early HTML prototype created to explore
+          Sejal's interface and user flow.
+        </p>
+
+      </div>
+
+
+      <p class="prototype-disclaimer">
+        The visual design is not final, and the agent responses shown in the
+        prototype were intentionally shortened for presentation. The current
+        AI-layer outputs are more detailed and evidence-grounded.
+      </p>
+
+
+      <div class="prototype-grid">
+
+
+        <!-- Claim Input -->
+        <figure class="prototype-item">
+
+          <figcaption class="prototype-caption">
+
+            <span class="prototype-number">
+              01
+            </span>
+
+            <h3>
+              Claim Input
+            </h3>
+
+            <p>
+              The user submits a scientific question or claim to begin the
+              debate.
+            </p>
+
+          </figcaption>
+
+
+          <img
+            src="../assets/projects/sejal/claim-input.jpg"
+            alt="Early Sejal prototype showing the scientific claim input interface"
+          >
+
+        </figure>
+
+
+        <!-- Debate -->
+        <figure class="prototype-item">
+
+          <figcaption class="prototype-caption">
+
+            <span class="prototype-number">
+              02
+            </span>
+
+            <h3>
+              Multi-Agent Debate
+            </h3>
+
+            <p>
+              The interface presents the Advocate and Skeptic positions as the
+              debate progresses through its rounds.
+            </p>
+
+          </figcaption>
+
+
+          <img
+            src="../assets/projects/sejal/debate.jpg"
+            alt="Early Sejal prototype showing the Advocate and Skeptic debate"
+          >
+
+        </figure>
+
+
+        <!-- Judgment -->
+        <figure class="prototype-item prototype-item-wide">
+
+          <figcaption class="prototype-caption">
+
+            <span class="prototype-number">
+              03
+            </span>
+
+            <h3>
+              Final Judgment & Sources
+            </h3>
+
+            <p>
+              After the debate concludes, the interface presents the final
+              judgment together with the key scientific sources linked to the
+              evaluation.
+            </p>
+
+          </figcaption>
+
+
+          <img
+            src="../assets/projects/sejal/judgment.jpg"
+            alt="Early Sejal prototype showing the final judgment and scientific sources"
+          >
+
+        </figure>
+
+      </div>
+
+    </section>
+
+
+    <!-- Technologies -->
+    <section class="technologies-section">
+
+      <div class="section-heading-project">
+
+        <h2>
+          Technologies
+        </h2>
+
+      </div>
+
+
+      <div class="technology-grid">
+
+        <div class="technology-item">
+
+          <div class="technology-icon">
+            <i class="fa-brands fa-python"></i>
+          </div>
+
+          <span>Python</span>
+
+        </div>
+
+
+        <div class="technology-item">
+
+          <div class="technology-icon">
+            <i class="fa-solid fa-diagram-project"></i>
+          </div>
+
+          <span>LangGraph</span>
+
+        </div>
+
+
+        <div class="technology-item">
+
+          <div class="technology-icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+
+          <span>Chroma</span>
+
+        </div>
+
+
+        <div class="technology-item">
+
+          <div class="technology-icon">
+            <i class="fa-solid fa-language"></i>
+          </div>
+
+          <span>multilingual-e5-small</span>
+
+        </div>
+
+
+        <div class="technology-item">
+
+          <div class="technology-icon">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+          </div>
+
+          <span>RAG</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Project Status -->
+    <section class="project-status-section">
+
+      <span class="status-label">
+        Project Status
+      </span>
+
+      <h2>
+        Currently in development.
+      </h2>
+
+      <p>
+        The core AI pipeline and debate workflow have been implemented and
+        tested, while system integration and the final interface are still
+        being refined.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+
+    <div class="footer-brand">
+
+      <img
+        src="../assets/logo.png"
+        alt=""
+      >
+
+      <span>
+        Aroub Abdullah
+      </span>
+
+    </div>
+
+
+    <p>
+      Computer Science · Qassim University
+    </p>
+
+  </footer>
+
+</body>
+
+</html>
